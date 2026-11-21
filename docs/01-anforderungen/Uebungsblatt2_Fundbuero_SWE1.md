@@ -56,7 +56,7 @@ Quellen: US = User Story (Aufgabe 5), UC1 = Anwendungsfall „Fund melden und ü
 
 2.  Das System stellt drei Zusatzfragen zu Merkmalen, die in der Fundmeldung nicht öffentlich sichtbar sind. Stimmen Nachweis und Fundbeschreibung nach Beantwortung der Fragen zu mindestens 95% überein, wird die Übergabe freigegeben.
 
-3.  Liegt die Übereinstimmung unter 95%, bleibt die Übergabe gesperrt und die Besitzerin erhält die Meldung, dass der Nachweis nicht ausgereicht hat.
+3.  Liegt die Übereinstimmung unter 90%, bleibt die Übergabe gesperrt und die Besitzerin erhält die Meldung, dass der Nachweis nicht ausgereicht hat.
 
 4.  Solange der Nachweis nicht erfolgreich geprüft wurde, sind weder Übergabeort noch Abholcode für den Besitzer aufrufbar.
 
