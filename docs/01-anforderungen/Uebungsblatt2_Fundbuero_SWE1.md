@@ -54,7 +54,7 @@ Quellen: US = User Story (Aufgabe 5), UC1 = Anwendungsfall „Fund melden und ü
 
 1.  Der Besitzer kann im Chat ein Foto oder eine genaue Beschreibung des Gegenstands als Nachweis einreichen.
 
-2.  Das System stellt drei Zusatzfragen zu Merkmalen, die in der Fundmeldung nicht öffentlich sichtbar sind. Stimmen Nachweis und Fundbeschreibung nach Beantwortung der Fragen zu mindestens 95% überein, wird die Übergabe freigegeben.
+2.  Das System stellt drei Zusatzfragen zu Merkmalen, die in der Fundmeldung nicht öffentlich sichtbar sind. Stimmen Nachweis und Fundbeschreibung nach Beantwortung der Fragen zu mindestens 90% überein, wird die Übergabe freigegeben.
 
 3.  Liegt die Übereinstimmung unter 90%, bleibt die Übergabe gesperrt und die Besitzerin erhält die Meldung, dass der Nachweis nicht ausgereicht hat.
 
