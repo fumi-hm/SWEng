@@ -24,7 +24,7 @@ Quellen: US = User Story (Aufgabe 5), UC1 = Anwendungsfall „Fund melden und ü
 | ReqFUND-N030 | 1        | US5, UC1, S1                                | Matching und Benachrichtigung  | Antwortzeit                              | Bei 1.000 aktiven Verlustmeldungen muss in mindestens 95 % der Fälle die Benachrichtigung über einen Treffer innerhalb von 60 Sekunden nach Absenden der Fundmeldung zugestellt werden.                                                                                                                                  |
 | ReqFUND-N040 | 1        | US7, UC1                                    | Gesamtsystem                   | Verfügbarkeit                            | Die produktiven Online-Dienste (Backend, Chat, Abgabebox-Anbindung) müssen eine monatliche Verfügbarkeit von mindestens 99,5 % erreichen, damit der Fund auch außerhalb üblicher Öffnungszeiten abgeholt werden kann.                                                                                                    |
 | ReqFUND-N050 | 1        | US1, UC1 (Ausnahme: kein Internet oder GPS) | Fundmeldung                    | Zuverlässigkeit bei fehlender Verbindung | Bei fehlender Internetverbindung muss die App eine vollständig erfasste Fundmeldung lokal speichern und innerhalb von 30 Sekunden nach Wiederherstellung der Verbindung automatisch senden. In 20 Testläufen darf keine Meldung verloren gehen.                                                                          |
-| ReqFUND-N060 | 1        | UC1 (Beteiligte Systeme)                    | Gesamtsystem                   | Wartbarkeit                              | Externe Dienste (Matching-Service, Push- und Chat-Dienst, Abgabebox-System) müssen über definierte Schnittstellen angebunden sein. Der Austausch eines externen Dienstes darf höchstens 5 Personentage dauern und keine Änderung der Fachlogik erfordern; die Testabdeckung der Fachlogik muss mindestens 70 % betragen. |
+| ReqFUND-N060 | 1        | UC1 (Beteiligte Systeme)                    | Gesamtsystem                   | Wartbarkeit                              | Externe Dienste (Matching-Service, Push- und Chat-Dienst, Abgabebox-System) müssen über definierte Schnittstellen angebunden sein. Der Austausch eines externen Dienstes darf höchstens 5 Werktage dauern und keine Änderung der Fachlogik erfordern; die Testabdeckung der Fachlogik muss mindestens 70 % betragen. |
 
 ## Aufgabe 3 - Versehen Sie Ihre Anforderungen mit Akzeptanzkriterien
 
@@ -84,7 +84,7 @@ Quellen: US = User Story (Aufgabe 5), UC1 = Anwendungsfall „Fund melden und ü
 
 **Akzeptanzkriterien**
 
-1.  Testbedingung: Im System sind 1.0identischen Bedingungen00 aktive Test-Verlustmeldungen hinterlegt. Es werden 100 Fundmeldungen mit passendem Treffer nacheinander abgesendet. Gemessen wird die Zeit vom Absenden bis zur Zustellung der Benachrichtigung.
+1.  Testbedingung: Im System sind 1.000 aktive Test-Verlustmeldungen hinterlegt. Es werden 100 Fundmeldungen mit passendem Treffer nacheinander abgesendet. Gemessen wird die Zeit vom Absenden bis zur Zustellung der Benachrichtigung.
 
 2.  Mindestens 95 der 100 Benachrichtigungen werden innerhalb von 60 Sekunden zugestellt.
 
@@ -92,7 +92,7 @@ Quellen: US = User Story (Aufgabe 5), UC1 = Anwendungsfall „Fund melden und ü
 
 **ReqFund-N060: Wartbarkeit (Austauschbarkeit externer Dienste)**
 
-| Externe Dienste (Matching – Service, Push- und Chat-Dienst, Abgabebox-System) müssen über definierte Schnittstellen angebunden sein. Der Austausch eines externen Dienstes darf höchstens 5 Personentage dauern und keine Änderung der Fachlogik erfordern; die Testabdeckung der Fachlogik muss mindestens 70% betragen. |
+| Externe Dienste (Matching-Service, Push- und Chat-Dienst, Abgabebox-System) müssen über definierte Schnittstellen angebunden sein. Der Austausch eines externen Dienstes darf höchstens 5 Werktage dauern und keine Änderung der Fachlogik erfordern; die Testabdeckung der Fachlogik muss mindestens 70% betragen. |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 **Akzeptanzkriterien**
@@ -183,6 +183,6 @@ Quellen: US = User Story (Aufgabe 5), UC1 = Anwendungsfall „Fund melden und ü
 
 **Begründung:** Optional, nicht wichtig damit der Prozess funktioniert.
 
-Nie: Wird bewusst nicht in den geplanten Produktumfang aufgenommen → *Handynummer austauschen! (alles nur über den Chat!)*
+**Nie**: Wird bewusst nicht in den geplanten Produktumfang aufgenommen → *Handynummer austauschen! (alles nur über den Chat!)*
 
-**Begründung:** Wird aus Sicherheitstechnischen Gründen nicht erlaubt um mit der App einen Lock-In Effekt zu erzeugen.
+**Begründung:** Zum Schutz der Privatsphäre (ReqFund-N020) läuft die Kommunikation ausschließlich über den App-Chat.
